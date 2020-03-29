@@ -21,7 +21,7 @@ import "fmt"
 
 */
 
-func twoSum(nums []int, target int) []int {
+func twoSum001(nums []int, target int) []int {
 	hm := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		left := target - nums[i]
