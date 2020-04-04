@@ -8,7 +8,7 @@ type MyStack struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyStack {
+func Constructor2() MyStack {
 	return MyStack{
 		data: nil,
 		len:  0,

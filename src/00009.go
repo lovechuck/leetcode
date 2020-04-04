@@ -1,7 +1,6 @@
 package src
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -27,7 +26,7 @@ import (
 你能不将整数转为字符串来解决这个问题吗？
 */
 
-func isPalindrome(x int) bool {
+func isPalindrome1(x int) bool {
 	if x < 0 {
 		return false
 	}
@@ -44,10 +43,4 @@ func isPalindrome(x int) bool {
 		return true
 	}
 	return false
-}
-
-//Test_isPalindrome
-func Test_isPalindrome() {
-	fmt.Println(isPalindrome(121))
-	fmt.Println(isPalindrome(-121))
 }
