@@ -22,7 +22,7 @@ func canAttendMeetings(rooms [][2]int) bool {
 		return rooms[i][0] < rooms[j][0]
 	})
 
-	for j = 1; j < len(rooms); j++ {
+	for j := 1; j < len(rooms); j++ {
 		if rooms[j-1][1] > rooms[j][0] {
 			return false
 		}

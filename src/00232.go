@@ -9,7 +9,7 @@ type MyQueue struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyQueue {
+func Constructor3() MyQueue {
 	return MyQueue{
 		length: 0,
 		in:     []int{},

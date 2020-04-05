@@ -1,7 +1,6 @@
 package src
 
 import (
-	"flag"
 	"math"
 )
 
@@ -35,4 +34,6 @@ func shortestDistance(words []string, word1 string, word2 string) int {
 			result = min(result, mabs(i1, i2))
 		}
 	}
+
+	return result
 }
