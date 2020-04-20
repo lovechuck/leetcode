@@ -3,5 +3,5 @@ package main
 import "leetcode/src"
 
 func main() {
-	src.Test_compress()
+	src.Test_licenseKeyFormatting()
 }
