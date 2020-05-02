@@ -8,12 +8,12 @@ package src
  *     Right *TreeNode
  * }
  */
-func maxDepth(root *TreeNode) int {
+func maxDepth2(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-	left := maxDepth(root.Left)
-	right := maxDepth(root.Right)
+	left := maxDepth2(root.Left)
+	right := maxDepth2(root.Right)
 	if left >= right {
 		return left + 1
 	} else {
