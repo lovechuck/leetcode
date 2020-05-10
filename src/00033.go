@@ -1,7 +1,5 @@
 package src
 
-import "fmt"
-
 /*
 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
 
@@ -63,7 +61,7 @@ func find(nums []int, target int, left int, right int) int {
 	return -1
 }
 
-func search(nums []int, target int) int {
+func search2(nums []int, target int) int {
 	if nums == nil || len(nums) == 0 {
 		return -1
 	}
@@ -86,10 +84,4 @@ func search(nums []int, target int) int {
 		return find(nums, target, rotate_index, len(nums)-1)
 	}
 	return find(nums, target, 0, rotate_index)
-}
-
-func Test_search() {
-	arr := []int{8, 9, 2, 3, 4}
-	target := 9
-	fmt.Println(search(arr, target))
 }
