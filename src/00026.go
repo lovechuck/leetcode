@@ -1,6 +1,6 @@
 package src
 
-func removeDuplicates(nums []int) int {
+func removeDuplicates1(nums []int) int {
 	if len(nums) == 0 {
 		return 0
 	}
