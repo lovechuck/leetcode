@@ -2,7 +2,7 @@ package src
 
 /*575. 分糖果*/
 
-func distributeCandies(candies []int) int {
+func distributeCandies1(candies []int) int {
 	set := make(map[int]bool)
 	sum := 0
 	for _, candy := range candies {
